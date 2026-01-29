@@ -80,4 +80,22 @@ Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 - **writing-skills** - Create new skills following best practices
 - **using-superpowers** - Introduction to the skills system
 
+## Long-Running Commands
+
+Dev servers and watch processes run indefinitely. To avoid blocking yourself:
+
+**ALWAYS append `&` to background these commands:**
+- `npm run dev &`
+- `npm start &`
+- `npx vite &`
+- `yarn dev &`
+- Any command that starts a server or watch mode
+
+**How to know if a command needs `&`:**
+- Starts a dev server (Vite, webpack-dev-server, Next.js dev)
+- Runs in watch mode (jest --watch, tsc --watch)
+- Starts any persistent service
+
+**After backgrounding:** The command output will show the server is ready (e.g., "VITE ready on localhost:5173"). You can then proceed with your next task.
+
 </EXTREMELY_IMPORTANT>
