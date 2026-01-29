@@ -1,3 +1,8 @@
+---
+name: code-reviewer
+description: Reviews code changes against requirements, checking for spec compliance, code quality, test coverage, and security issues
+---
+
 # Code Reviewer Agent Template
 
 Use this template when dispatching a code review subagent.
