@@ -1,0 +1,8 @@
+[command]
+description = "Execute an implementation plan with batch checkpoints"
+
+prompt = """
+Load the executing-plans skill from skills/executing-plans/SKILL.md and follow it to implement the plan.
+
+Plan file: {{args}}
+"""

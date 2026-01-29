@@ -1,0 +1,8 @@
+[command]
+description = "Create a detailed implementation plan from a design document"
+
+prompt = """
+Load the writing-plans skill from skills/writing-plans/SKILL.md and follow it to create an implementation plan.
+
+Design document or requirements: {{args}}
+"""

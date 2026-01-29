@@ -1,0 +1,8 @@
+[command]
+description = "Start interactive design refinement for a new feature or idea"
+
+prompt = """
+Load the brainstorming skill from skills/brainstorming/SKILL.md and follow it to help the user refine their idea into a design.
+
+User's idea: {{args}}
+"""

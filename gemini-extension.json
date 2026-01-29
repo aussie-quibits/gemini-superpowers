@@ -1,0 +1,13 @@
+{
+  "name": "gemini-superpowers",
+  "version": "1.0.0",
+  "description": "Core skills library for Gemini CLI: TDD, debugging, collaboration patterns, and proven techniques",
+  "author": {
+    "name": "Adapted from obra/superpowers",
+    "url": "https://github.com/obra/superpowers"
+  },
+  "homepage": "https://github.com/obra/gemini-superpowers",
+  "license": "MIT",
+  "keywords": ["skills", "tdd", "debugging", "collaboration", "best-practices", "workflows"],
+  "contextFileName": "GEMINI.md"
+}
