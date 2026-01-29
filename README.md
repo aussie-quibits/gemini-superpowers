@@ -16,44 +16,37 @@ Next up, once you say "go", it launches a *subagent-driven-development* process,
 
 ## Installation
 
-### Option 1: Extension Installation (Recommended)
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/obra/gemini-superpowers.git ~/.gemini/extensions/gemini-superpowers
-```
-
-2. **Register the extension:**
-
-Add to your `~/.gemini/settings.json`:
-```json
-{
-  "extensions": [
-    "~/.gemini/extensions/gemini-superpowers"
-  ]
-}
-```
-
-3. **Restart Gemini CLI**
-
-### Option 2: Global Context File
-
-If you prefer a simpler setup, copy the GEMINI.md file to your home directory:
+Run this command in your terminal:
 
 ```bash
-cp ~/.gemini/extensions/gemini-superpowers/GEMINI.md ~/.gemini/GEMINI.md
+gemini extensions install https://github.com/aussie-quibits/gemini-superpowers
 ```
 
-Then symlink the skills directory:
-```bash
-ln -s ~/.gemini/extensions/gemini-superpowers/skills ~/.gemini/skills/superpowers
-```
+That's it. The extension is now installed.
 
 ### Verify Installation
 
-Ask Gemini: "Do you have superpowers?"
+Check it's installed:
 
-It should respond affirmatively and mention the available skills.
+```bash
+gemini extensions list
+```
+
+You should see `gemini-superpowers` in the list.
+
+Then start Gemini CLI and ask: "Do you have superpowers?"
+
+### Updating
+
+```bash
+gemini extensions update gemini-superpowers
+```
+
+### Uninstalling
+
+```bash
+gemini extensions uninstall gemini-superpowers
+```
 
 ## The Basic Workflow
 
@@ -111,15 +104,6 @@ It should respond affirmatively and mention the available skills.
 - **Systematic over ad-hoc** - Process over guessing
 - **Complexity reduction** - Simplicity as primary goal
 - **Evidence over claims** - Verify before declaring success
-
-## Updating
-
-```bash
-cd ~/.gemini/extensions/gemini-superpowers
-git pull
-```
-
-Restart Gemini CLI to load updates.
 
 ## Contributing
 
