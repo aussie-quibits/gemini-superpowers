@@ -96,6 +96,15 @@ Dev servers and watch processes run indefinitely. To avoid blocking yourself:
 - Runs in watch mode (jest --watch, tsc --watch)
 - Starts any persistent service
 
-**After backgrounding:** The command output will show the server is ready (e.g., "VITE ready on localhost:5173"). You can then proceed with your next task.
+**After backgrounding:** The command output will show the server is ready. You can then proceed with your next task.
+
+**Success signals (proceed when you see these):**
+- Vite: "VITE ready in X ms" or "Local: http://localhost:..."
+- Next.js: "Ready on http://localhost:..."
+- Webpack: "Compiled successfully"
+- Create React App: "Compiled successfully" or "You can now view..."
+- Generic: Any "ready", "listening on", or "started" message with a port number
+
+When you see these signals, the server is running successfully. Do NOT wait for the process to exit - it won't. Move on to your next task.
 
 </EXTREMELY_IMPORTANT>
